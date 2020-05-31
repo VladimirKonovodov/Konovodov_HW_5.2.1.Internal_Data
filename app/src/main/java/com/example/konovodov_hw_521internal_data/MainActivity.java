@@ -66,12 +66,10 @@ public class MainActivity extends AppCompatActivity {
                     if (loginFromFile.toString().equals(mLoginEdTxt.getText().toString())) {
                         if (passFromFile.toString().equals(mPassEdTxt.getText().toString())) {
                             Toast.makeText(MainActivity.this, "УСПЕХ!!!", Toast.LENGTH_SHORT).show();
-                        }
-                        else {
+                        } else {
                             Toast.makeText(MainActivity.this, "Пароль введен не верно", Toast.LENGTH_SHORT).show();
                         }
-                    }
-                    else {
+                    } else {
                         Toast.makeText(MainActivity.this, "Логин введен не верно", Toast.LENGTH_SHORT).show();
                     }
 
