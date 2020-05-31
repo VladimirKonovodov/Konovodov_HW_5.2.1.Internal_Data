@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Konovodov_HW_5.2.1.Internal_Data</string>
+    <string name="enter">войти</string>
+    <string name="login">enter login</string>
+    <string name="enter_password">enter password</string>
+    <string name="registration">регистр.</string>
 </resources>

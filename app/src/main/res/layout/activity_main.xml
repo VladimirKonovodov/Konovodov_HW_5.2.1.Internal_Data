@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:hint="enter login"
+                android:hint="@string/login"
 
                 />
 
@@ -35,7 +35,7 @@
                 android:id="@+id/enterBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="войти" />
+                android:text="@string/enter" />
         </LinearLayout>
 
         <LinearLayout
@@ -52,15 +52,15 @@
 
 
                 android:gravity="center"
-                android:hint="enter password"
+                android:hint="@string/enter_password"
 
-                />
+                android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/regBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="регистр." />
+                android:text="@string/registration" />
         </LinearLayout>
 
     </LinearLayout>
