@@ -2,6 +2,7 @@ package com.example.konovodov_hw_521internal_data;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private StringBuffer loginFromFile;
     private StringBuffer passFromFile;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Button mEnterBtn = findViewById(R.id.enterBtn);
         Button mRegBtn = findViewById(R.id.regBtn);
 
+
         mEnterBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 if ((mLoginEdTxt.getText().length() == 0) || (mPassEdTxt.getText().length() == 0)) {
                     Toast.makeText(MainActivity.this, "Введите логин и пароль для входа", Toast.LENGTH_SHORT).show();
                 } else {
-                    //работаем...
+
 
                     try {
                         fileInputStream = openFileInput("file_name");
@@ -112,4 +115,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
 }
